@@ -1,0 +1,5 @@
+- Use another windows machine to create bootable windows USB
+- Boot to bios by holding f10 (no usb stick in)
+- Disable UEFI by switching to legacy boot
+- Save and reboot with USB stick in
+- At install screen, switch the USB stick to another port (this somehow bypassed the missing drivers error)
