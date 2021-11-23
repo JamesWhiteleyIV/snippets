@@ -1,0 +1,1 @@
+start netsh wlan connect name="IbetYouCanGuess-5G"
