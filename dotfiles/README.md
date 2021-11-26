@@ -21,7 +21,7 @@ echo "alias ..='cd ..'" >> ~/.bashrc && \
 echo "alias ...='cd ..; cd ..'" >> ~/.bashrc && \
 echo "alias ....='cd ..; cd ..; cd ..'" >> ~/.bashrc && \
 echo "export EDITOR=vim" >> ~/.bashrc 
-echo "export PS1=\"$ \"" >> ~/.bashrc 
+echo "export PS1=\"[\D{%H:%M:%S}]$ \"" >> ~/.bashrc 
 ```
 
 
