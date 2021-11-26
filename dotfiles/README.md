@@ -3,11 +3,10 @@
 Setup vim, zsh, and python3
 ```bash
 sudo apt-get update && sudo apt-get -y install curl zsh git-all python3-pip gnupg && \
-curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/dotfiles/main/vimrc -o ~/.vimrc && \
+curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimrc -o ~/.vimrc && \
 mkdir -p ~/.vim/colors && \
-curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/dotfiles/main/vimfiles/colors/vscode.vim -o ~/.vim/colors/vscode.vim && \ 
-curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/dotfiles/main/vimfiles/colors/pastel.vim -o ~/.vim/colors/pastel.vim && \
-unset $ZSH && \
+curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimfiles/colors/vscode.vim -o ~/.vim/colors/vscode.vim && \ 
+curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimfiles/colors/pastel.vim -o ~/.vim/colors/pastel.vim && \
 cd ~ && \
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k && \
