@@ -1,4 +1,3 @@
-" Adapted from codesdark.vim
 scriptencoding utf-8
 
 set background=dark
@@ -6,20 +5,20 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name="james"
+let g:colors_name="vscode"
 
-" Highlighting function (inspiration from https://github.com/chriskempson/base16-vim)
+" Highlighting function 
 if &t_Co >= 256
-    let g:james_term256=1
-elseif !exists("g:james_term256")
-    let g:james_term256=0
+    let g:vscode_term256=1
+elseif !exists("g:vscode_term256")
+    let g:vscode_term256=0
 endif
 fun! <sid>hi(group, fg, bg, attr, sp)
   if !empty(a:fg)
-    exec "hi " . a:group . " guifg=" . a:fg.gui . " ctermfg=" . (g:james_term256 ? a:fg.cterm256 : a:fg.cterm)
+    exec "hi " . a:group . " guifg=" . a:fg.gui . " ctermfg=" . (g:vscode_term256 ? a:fg.cterm256 : a:fg.cterm)
   endif
   if !empty(a:bg)
-    exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" . (g:james_term256 ? a:bg.cterm256 : a:bg.cterm)
+    exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" . (g:vscode_term256 ? a:bg.cterm256 : a:bg.cterm)
   endif
   if a:attr != ""
     exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
@@ -63,7 +62,7 @@ endif
 " (some of them may be unused)
 "
 "
-" James custom colors:
+" custom colors:
 let s:cdPastelGreen = {'gui': '#CAE7C1', 'cterm': '1', 'cterm256': '1'}
 let s:cdPastelBlue = {'gui': '#7CD7FE', 'cterm': '1', 'cterm256': '1'}
 
