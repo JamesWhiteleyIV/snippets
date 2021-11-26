@@ -1,5 +1,5 @@
 " set color scheme
-color pastel
+color vscode
 
 " set dark version of color scheme
 set background=dark
@@ -165,3 +165,7 @@ set title
 
 " increase undo limit
 set history=1000
+
+" use ctrl+c to copy to clipboard
+vmap <C-c> "+y
+
