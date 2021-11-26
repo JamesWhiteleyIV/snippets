@@ -1,31 +1,27 @@
 # Linux Setup
 
-Setup vim, zsh, and python3
+Setup vim, bash, and python3
 ```bash
 sudo apt-get update && sudo apt-get -y install curl zsh git-all python3-pip gnupg && \
 curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimrc -o ~/.vimrc && \
 mkdir -p ~/.vim/colors && \
 curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimfiles/colors/vscode.vim -o ~/.vim/colors/vscode.vim && \ 
 curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimfiles/colors/pastel.vim -o ~/.vim/colors/pastel.vim && \
-cd ~ && \
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k && \
-echo "alias gits='git status'" >> ~/.zshrc && \
-echo "alias gitb='git branch'" >> ~/.zshrc && \
-echo "alias gitco='git checkout'" >> ~/.zshrc && \
-echo "alias gitac='git add --all && git commit -m'" >> ~/.zshrc && \
-echo "alias gitpom='git push origin master'" >> ~/.zshrc && \
-echo "alias python='python3'" >> ~/.zshrc && \
-echo "alias py='python3'" >> ~/.zshrc && \
-echo "alias pip='pip3'" >> ~/.zshrc && \
-echo "alias open='xdg-open'" >> ~/.zshrc && \
-echo "alias start='xdg-open'" >> ~/.zshrc && \
-echo "alias ..='cd ..'" >> ~/.zshrc && \
-echo "alias ...='cd ..; cd ..'" >> ~/.zshrc && \
-echo "alias ....='cd ..; cd ..; cd ..'" >> ~/.zshrc && \
-echo "export EDITOR=vim" >> ~/.zshrc 
+echo "alias gits='git status'" >> ~/.bashrc && \
+echo "alias gitb='git branch'" >> ~/.bashrc && \
+echo "alias gitco='git checkout'" >> ~/.bashrc && \
+echo "alias gitac='git add --all && git commit -m'" >> ~/.bashrc && \
+echo "alias gitpom='git push origin master'" >> ~/.bashrc && \
+echo "alias python='python3'" >> ~/.bashrc && \
+echo "alias py='python3'" >> ~/.bashrc && \
+echo "alias pip='pip3'" >> ~/.bashrc && \
+echo "alias open='xdg-open'" >> ~/.bashrc && \
+echo "alias start='xdg-open'" >> ~/.bashrc && \
+echo "alias ..='cd ..'" >> ~/.bashrc && \
+echo "alias ...='cd ..; cd ..'" >> ~/.bashrc && \
+echo "alias ....='cd ..; cd ..; cd ..'" >> ~/.bashrc && \
+echo "export EDITOR=vim" >> ~/.bashrc 
 ```
-Set ZSH_THEME=powerlevel10k/powerlevel10k in your ~/.zshrc then restart your terminal to start the configuration process of powerlevel10k
 
 
 Remap caps-lock to escape
