@@ -6,7 +6,7 @@ sudo apt-get update && sudo apt-get -y install curl git-all python3-pip gnupg &&
 curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimrc -o ~/.vimrc && \
 mkdir -p ~/.vim/colors && \
 curl https://raw.githubusercontent.com/JamesWhiteleyIV/snippets/master/dotfiles/vimfiles/colors/vscode.vim -o ~/.vim/colors/vscode.vim && \ 
-echo "function gitacp() { git add --all ; git commit -m \"$1\" ; git push ; }" >> ~/.bashrc && \
+echo "function gitacp() { git add --all ; git commit -m \"\$1\" ; git push ; }" >> ~/.bashrc && \
 echo "alias gitb='git branch'" >> ~/.bashrc && \
 echo "alias gits='git status'" >> ~/.bashrc && \
 echo "alias python='python3'" >> ~/.bashrc && \
