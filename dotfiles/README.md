@@ -17,8 +17,9 @@ echo "alias start='xdg-open'" >> ~/.bashrc && \
 echo "alias ..='cd ..'" >> ~/.bashrc && \
 echo "alias ...='cd ..; cd ..'" >> ~/.bashrc && \
 echo "alias ....='cd ..; cd ..; cd ..'" >> ~/.bashrc && \
-echo "export EDITOR=vim" >> ~/.bashrc 
+echo "export EDITOR=vim" >> ~/.bashrc && \
 echo "export PS1=\"[\D{%H:%M:%S}]$ \"" >> ~/.bashrc && \
+echo "export LS_COLORS=$LS_COLORS:'ow=1;34:';" >> ~/.bashrc && \
 source ~/.bashrc
 ```
 
